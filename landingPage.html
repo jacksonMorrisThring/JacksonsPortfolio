@@ -9,7 +9,9 @@
 </head>
 <body>
     <div id = "root">
-        <div class="jumbotron" id = "jumbotron" data-state = "visible">
+
+        <!-- Jumbotron that intially is visible, when button is clicked, it gets hidden -->
+        <div class="jumbotron" id = "jumbotron" style = "display: block;">
             <h1 class="display-4" id = "myName">Jackson's Portfolio</h1>
             <p class="lead">This is a portfolio that highlights my biggest and best projects!</p>
             <hr class="my-4">
@@ -19,6 +21,58 @@
             </p>
             <a class="btn btn-danger btn-lg" role="button" id = "learnMore">Learn more</a>
           </div>
+
+          <div class="card" id = "mainCard" style = "display: none;">
+            
+            <div class="card-body">
+              <h5 class="card-title">The Hobby Astronomer's API</h5>
+              <img src="https://www.capturelandscapes.com/wp-content/uploads/2017/06/Alien-Trees.jpg"
+             class="card-img-top" alt="stars picture" height = "450rem" >
+              <p class="card-text">Within my coding bootcamp, I helped create a fully functionaing API that commuinicates with local servers to give you
+                a concise summary of planetary observation opportunities in your area! Click the button to see the deployed application!
+              </p>
+             
+             
+            </div>
+            
+             <a href="#" id = "astronomerAPI" class="btn-lg btn-primary">Go somewhere</a>
+          </div>
+
+         
+
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card h-200" id = "subCardOne" style = "display: none;">
+                <div class="card-body">
+                  <h5 class="card-title"> Coding tuition landing page!
+                  </h5>
+                  <p class="card-text">Using bootstrap, html, and custom css, I made a friendly landing page for my coding tution business!</p>
+                  <a href="#" id = "L2C" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card h-200" id = "subCardTwo" style = "display: none;">
+                <div class="card-body">
+                  <h5 class="card-title">Using python, I made a shopping list generator!</h5>
+                  <p class="card-text">Uses hard code for eisle number, list items, and price, and outputs a list with price, in order of most
+                     efficiency through the shops!.</p>
+                  <a href="#" id = "shoppingList" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+           
+          <!-- <div class="card bg-dark text-white col-10" id = "mainCard" style = "display: none;">
+            <img class="card-img" src="https://colourlex.com/wp-content/uploads/2021/02/charcoal-black-painted-swatch-300x300.jpg" alt="Card image">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div> -->
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"
